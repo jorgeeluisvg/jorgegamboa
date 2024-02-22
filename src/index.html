@@ -9,11 +9,11 @@
 <body>
     <!--NAVBAR-->
     <header class="p-5 border-b bg-white shadow">
-        <div class="container mx-auto flex justify-between items-center">
-            <a class="text-3xl font-black" href="">
+        <div class="container mx-auto flex justify-start  md:justify-between items-center">
+            <a class="text-sm mr-1 md:text-3xl font-black" href="">
                 JorgeGamboa
             </a>
-            <nav class="flex gap-8 items-center">
+            <nav class="flex gap-2 md:gap-8 items-center">
                 <a class="font-bold uppercase text-gray-600 text-sm hover:text-slate-800" 
                 href="#home">Home</a>
 
@@ -24,16 +24,16 @@
         </div>
     </header>
     
-    <main class="flex flex-col md:flex-row mx-4 md:mx-56 mt-32 mb-32" id="home">
+    <main class="flex flex-col md:flex-row mx-4 lg:mx-4 xl:mx-56 mt-32 mb-32" id="home">
         <div class="flex justify-center md:justify-center w-full md:w-2/4">
             <img src="../me.jpeg"
-            class="rounded-full object-cover w-72 h-72
-            md:w-96 md:h-full aspect-square
+            class="rounded-full object-cover w-96 h-80
+            lg:w-96 lg:h-full md:h-full aspect-square
             " alt="JorgeGamboa">
         </div>
 
         <div class="flex flex-col justify-center w-full md:w-2/5 md:items-center shadow-2xl px-8 rounded-xl mt-8 md:mt-0">
-            <h1 class="text-4xl md:text-5xl font-black animate-bounce mb-8">Jorge Gamboa</h1>
+            <h1 class="text-4xl lg:text-3xl md:text-5xl font-black animate-bounce mb-8">Jorge Gamboa</h1>
             <p class="text-lg text-pretty">With over three years of experience creating open-source projects, I aim to develop tangible, usable, and meaningful products while staying abreast of the latest tools and technologies.</p>
 
             <div class="flex flex-row gap-8">
@@ -54,13 +54,13 @@
     </main>
 
     <!--About me-->
-    <div class="container flex justify-center items-center">
+    <div class=" flex justify-center items-center">
         <h1 class="md:text-5xl font-bold  mt-8 mb-20 text-center">About me</h1>
     </div>
 
     <div class="flex flex-col md:flex-row mx-4 md:mx-2 mb-32">
 
-        <div class="flex justify-center md:justify-center w-full md:w-2/6 ml-32">
+        <div class="flex justify-center md:justify-center w-full md:w-2/6 ml-32 lg:mr-8 xl:mr-0">
             <img src="/resources/jorge.jpeg"
             class="rounded-xl w-96 h-96 object-cover grayscale">
         </div>
@@ -92,12 +92,12 @@
     </div>
 
     <!--Experience-->
-    <div class="container flex justify-center items-center" id="experience">
+    <div class=" flex justify-center items-center" id="experience">
         <h1 class="md:text-5xl font-bold mb-8 mt-8 mb-20 text-center">Experience</h1>
     </div>
 
     <h1 class="text-4xl font-semibold text-center">Languages</h1><br>
-    <div class="flex flex-col flex-wrap md:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:w-2/6 mx-auto h-44 gap-4 mb-32">
+    <div class="flex flex-col flex-wrap md:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:w-2/6 mx-auto h-44 gap-4 lg:w-1/2 xl:w-2/6 mb-32">
         <img src="/resources/python.png">
         <img src="/resources/node.png">
         <img src="/resources/js.png">
@@ -105,14 +105,14 @@
     </div>
 
     <h1 class="text-4xl font-semibold text-center">Technologies</h1><br>
-    <div class="flex flex-col flex-wrap md:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:w-2/6 mx-auto h-44 gap-4 mb-32">
+    <div class="flex flex-col flex-wrap md:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:w-2/6 mx-auto h-44 gap-4 lg:w-1/2 xl:w-2/6 mb-32">
         <img src="/resources/laravel.png">
         <img src="/resources/tailwind.png">
         <img src="/resources/android.png">
     </div>
 
     <!--Projects-->
-    <div class="container flex justify-center items-center" id="projects">
+    <div class=" flex justify-center items-center" id="projects">
         <h1 class="md:text-5xl font-bold mt-8 mb-20 text-center">Projects</h1>
     </div>
 
