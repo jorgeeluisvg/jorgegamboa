@@ -27,14 +27,14 @@
         </div>
     </header>
 
-    <main class="flex flex-col md:flex-row mx-4 lg:mx-4 xl:mx-56 mt-32 mb-32" id="home">
-        <div class="flex justify-center md:justify-center w-full md:w-2/4">
-            <img src="../me.jpeg" class="rounded-full object-cover w-96 h-80 lg:w-96 lg:h-full md:h-full aspect-square"
+    <main class="flex flex-col md:flex-row mx-4 lg:mx-4 xl:mx-56 mt-16 md:mt-32 mb-32 md:mb-16 lg:mb-32" id="home">
+        <div class="flex justify-center md:items-center w-full md:w-2/4">
+            <img src="../me.jpeg" class="rounded-full object-cover w-96 h-80 md:w-72 md:h-72 lg:w-96 lg:h-full aspect-square"
                 alt="JorgeGamboa" />
         </div>
 
         <div
-            class="flex flex-col justify-center w-full md:w-2/5 md:items-center shadow-2xl px-8 rounded-xl mt-8 md:mt-0">
+            class="flex flex-col justify-center w-full md:w-3/5 lg:w-2/5 md:mr-4 md:items-center shadow-2xl px-8 rounded-xl mt-8 md:mt-0">
             <h1 class="text-4xl lg:text-3xl md:text-5xl font-black animate-bounce mb-8">
                 Jorge Gamboa
             </h1>
@@ -73,12 +73,12 @@
         </h1>
     </div>
 
-    <section class="flex flex-col justify-between md:flex-row mx-4 mb-14 md:mx-2 sm:mb-32">
+    <section class="flex flex-col justify-between md:flex-row mx-4 mb-14 md:mx-2 sm:mb-32 md:mb-16 lg:mb-32">
         <div class="flex justify-center w-full md:w-2/6 md:ml-0 lg:mr-8 xl:mr-0 flex-1">
-            <img src="../resources/jorge.jpeg" class="rounded-xl w-96 h-96 object-cover grayscale" alt="JorgeGamboa" />
+            <img src="../resources/jorge.jpeg" class="rounded-xl w-96 h-96 object-cover grayscale md:invisible lg:visible" alt="JorgeGamboa" />
         </div>
 
-        <div class="flex flex-col my-10 mx-0 xl:mr-44 sm:my-0">
+        <div class="flex flex-col my-10 mx-0 xl:mr-44 sm:my-0 md:mr-8 lg:mr-0">
             <div class="flex flex-row">
                 <div
                     class="flex flex-wrap justify-center items-center md:justify-center w-80 h-36 border border-black rounded-3xl flex-col">
@@ -137,30 +137,38 @@
         </h1>
     </div>
 
-    <h1 class="text-4xl font-semibold text-center">Languages</h1>
+<section class="flex justify-center items-center flex-col md:flex-row">
     <br>
-    <div
-        class="flex flex-col flex-wrap md:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:w-2/6 mx-auto h-44 gap-4 lg:w-1/2 xl:w-2/6 mb-32">
+    <div class="flex flex-col w-full">
+        <h1 class="text-4xl font-semibold text-center">Languages</h1>
+        <br>
+        <div class="flex flex-col flex-wrap lg:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:h-full lg:h-52 md:w-2/3 mx-auto h-44 gap-4 lg:w-3/4 mb-32">
         <img src="../resources/python.png" alt="python"/>
         <img src="../resources/js.png" alt="javascript"/>
         <img src="../resources/java.png" alt="java"/>
+        </div>
     </div>
 
-    <h1 class="text-4xl font-semibold text-center">Technologies</h1>
-    <br />
-    <div
-        class="flex flex-col flex-wrap md:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:w-2/6 mx-auto h-44 gap-4 lg:w-1/2 xl:w-2/6 mb-32">
+    <br>
+    <div class="flex flex-col w-full">
+        <h1 class="text-4xl font-semibold text-center">Technologies</h1>
+        <br>
+        <div
+        class="flex flex-col flex-wrap lg:flex-row items-center justify-center shadow-2xl rounded-2xl w-full md:w-2/3 md:h-full lg:h-52 mx-auto h-44 gap-4 lg:w-3/4 mb-32">
         <img src="../resources/laravel.png" alt="laravel" />
         <img src="../resources/tailwind.png" alt="tailwind" />
         <img src="../resources/android.png" alt="android"/>
     </div>
-
+</div>
+</section>
     <!--Projects-->
     <div class="flex justify-center items-center" id="projects">
         <h1 class="text-4xl md:text-5xl font-bold mt-8 mb-20 text-center">
             Projects
         </h1>
     </div>
+
+    
 
     <div class="flex justify-center items-center mx-auto gap-8 flex-col sm:flex-row">
         <!--P1-->
