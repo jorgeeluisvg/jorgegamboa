@@ -9,6 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <title>JorgeGamboa</title>
+    <style>
+        /* Estilo para la animación del fondo */
+        .ag-courses-item_bg {
+            transition: transform 0.5s ease;
+        }
+        .ag-courses-item_link:hover .ag-courses-item_bg {
+            transform: scale(10);
+        }
+        /* Estilo para cambiar el color de la tarjeta en hover */
+        .ag-courses-item_link:hover {
+            background-color: #ffffff; /* Color deseado al hacer hover */
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +33,7 @@
                 <a class="font-bold uppercase text-gray-600 text-sm hover:text-slate-800" href="#home">Home</a>
 
                 <a class="font-bold uppercase text-gray-600 text-sm hover:text-slate-800"
-                    href="#experience">Experience</a>
+                    href="#skills">Skills</a>
 
                 <a class="font-bold uppercase text-gray-600 text-sm hover:text-slate-800" href="#projects">Projects</a>
             </nav>
@@ -29,7 +42,7 @@
 
     <main class="flex flex-col md:flex-row mx-4 lg:mx-4 xl:mx-56 mt-16 md:mt-32 mb-32 md:mb-16 lg:mb-32" id="home">
         <div class="flex justify-center md:items-center w-full md:w-2/4">
-            <img src="./me.jpeg" class="rounded-full object-cover w-96 h-80 md:w-72 md:h-72 lg:w-96 lg:h-full aspect-square"
+            <img src="./me.jpeg" class="rounded-full object-cover w-80 sm:w-96 h-80 md:w-72 md:h-72 lg:w-96 lg:h-full aspect-square"
                 alt="JorgeGamboa" />
         </div>
 
@@ -47,12 +60,12 @@
             <div class="flex flex-row gap-8">
                 <a href="https://mx.linkedin.com/in/jorgeluisvillanuevagamboa">
                     <button type="button"
-                        class="mt-8 text-black bg-white border border-black hover:bg-gray-800 focus:ring-4 focus:ring-lime-400 font-medium rounded-full px-5 py-2.5 md:text-sm hover:text-white">
+                        class="mt-8 text-black bg-white border border-black hover:bg-gray-900 focus:ring-4 focus:ring-lime-400 font-medium rounded-full px-5 py-2.5 md:text-sm hover:text-white">
                         Contact Me
                     </button></a>
 
                 <button type="button"
-                    class="mt-8 text-white bg-gray-800 hover:bg-black focus:ring-4 focus:ring-blue-300 font-medium rounded-full px-5 py-2.5 md:text-sm">
+                    class="mt-8 text-white bg-gray-900 hover:bg-black focus:ring-4 focus:ring-blue-300 font-medium rounded-full px-5 py-2.5 md:text-sm">
                     Download CV
                 </button>
             </div>
@@ -68,17 +81,17 @@
 
     <!--About me-->
     <div class="flex justify-center items-center">
-        <h1 class="text-4xl md:text-5xl font-bold mt-2 sm:mt-8 mb-20 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mt-2 sm:mt-8 mb-20 text-center font-mono">
             About me
         </h1>
     </div>
 
-    <section class="flex flex-col justify-between md:flex-row mx-4 mb-14 md:mx-2 sm:mb-32 md:mb-16 lg:mb-32">
-        <div class="flex justify-center w-full md:w-2/6 md:ml-0 lg:mr-8 xl:mr-0 flex-1">
-            <img src="./resources/jorge.jpeg" class="rounded-xl w-96 h-96 object-cover grayscale md:invisible lg:visible" alt="JorgeGamboa" />
+    <section class="flex flex-col w-full md:items-center justify-center md:flex-row mx-4 mb-14 md:mx-2 sm:mb-32 md:mb-16 lg:mb-32">
+        <div class="flex justify-center w-full md:w-2/4 md:ml-0 lg:mr-8 xl:mr-0 ">
+            <img src="./resources/jorge.jpeg" class="rounded-xl w-96 h-96 object-cover grayscale md:invisible lg:visible" alt="JorgeGamboa" /> 
         </div>
 
-        <div class="flex flex-col my-10 mx-0 xl:mr-44 sm:my-0 md:mr-8 lg:mr-0">
+        <div class="flex flex-col my-10 mx-0 xl:mr-44 sm:my-0 md:mr-8 lg:mr-0 xl:w-2/5">
             <div class="flex flex-row">
                 <div
                     class="flex flex-wrap justify-center items-center md:justify-center w-80 h-36 border border-black rounded-3xl flex-col">
@@ -131,9 +144,9 @@
     </section>
 
     <!--Experience-->
-    <div class="flex justify-center items-center" id="experience">
-        <h1 class="text-4xl md:text-5xl font-bold mt-2 sm:mt-8 mb-20 text-center">
-            Experience
+    <div class="flex justify-center items-center" id="skills">
+        <h1 class="text-4xl md:text-5xl font-bold mt-2 sm:mt-8 mb-20 text-center font-mono">
+            My Skills
         </h1>
     </div>
 
@@ -163,57 +176,44 @@
 </section>
     <!--Projects-->
     <div class="flex justify-center items-center" id="projects">
-        <h1 class="text-4xl md:text-5xl font-bold mt-8 mb-20 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mt-8 mb-20 text-center font-mono">
             Projects
         </h1>
     </div>
 
-    
-
-    <div class="flex justify-center items-center mx-auto gap-8 flex-col sm:flex-row">
-        <!--P1-->
-        <div
-            class="flex flex-wrap justify-center items-center md:justify-center w-auto h-auto border border-black rounded-3xl flex-col">
-            <img src="./resources/pakmail.webp" class="project-image rounded-3xl object-contain h-40 w-96" alt="pakmail" />
-            <h1 class="font-semibold text-2xl mt-8">Pakmail DWH</h1>
-            <div class="flex flex-row gap-4">
-                <a href="https://github.com/jorgeeluisvg/pakmail">
-                    <button type="button"
-                        class="mt-8 text-black bg-white border border-black hover:bg-gray-800 focus:ring-4 focus:ring-lime-400 font-medium rounded-full px-5 py-2.5 md:text-sm hover:text-white mb-8">
-                        Github
-                    </button></a>
+    <section class="flex flex-col w-9/12 items-center justify-center mx-auto sm:flex-row">
+        <div class="w-full p-4 md:w-1/3">
+            <a href="https://github.com/jorgeeluisvg/pakmail" class="ag-courses-item_link relative block overflow-hidden rounded-3xl bg-white  border border-black p-6 hover:text-white">
+            <div class="ag-courses-item_bg absolute right-0 top-0 -mx-16 -mt-16 h-32 w-32 rounded-full bg-yellow-500"></div>
+            <div class="relative z-10">
+                <div class="mb-6 min-h-20 text-3xl font-bold text-black">Pakmail DatawareHouse</div>
+                <div class="text-lg text-black">Start: <span class="font-bold text-yellow-500">04.11.2022</span></div>
             </div>
+            </a>
+        </div>
+        
+        <div class="w-full p-4 md:w-1/3">
+            <a href="https://github.com/jorgeeluisvg/jobforu" class="ag-courses-item_link relative block overflow-hidden rounded-3xl bg-white border border-black p-6 hover:text-white">
+            <div class="ag-courses-item_bg absolute right-0 top-0 -mx-16 -mt-16 h-32 w-32 rounded-full bg-green-500"></div>
+            <div class="relative z-10">
+                <div class="mb-6 min-h-20 text-3xl font-bold text-black">Job For U</div>
+                <div class="text-lg text-black">Start: <span class="font-bold text-yellow-500">04.11.2022</span></div>
+            </div>
+        </a>
         </div>
 
-        <!--P2-->
-        <div
-            class="flex flex-wrap justify-center items-center md:justify-center h-auto border border-black rounded-3xl flex-col">
-            <img src="./resources/job.svg" class="project-image rounded-3xl object-contain h-40 w-96" alt="JobForU" />
-            <h1 class="font-semibold text-2xl mt-8">Job For U</h1>
-            <div class="flex flex-row gap-4">
-                <a href="https://github.com/jorgeeluisvg/jobforu">
-                    <button type="button"
-                        class="mt-8 text-black bg-white border border-black hover:bg-gray-800 focus:ring-4 focus:ring-lime-400 font-medium rounded-full px-5 py-2.5 md:text-sm hover:text-white mb-8">
-                        Github
-                    </button></a>
+        <div class="w-full p-4 md:w-1/3">
+            <a href="https://github.com/jorgeeluisvg/armRover" class="ag-courses-item_link relative block overflow-hidden rounded-3xl bg-white border border-black p-6 hover:text-white">
+            <div class="ag-courses-item_bg absolute right-0 top-0 -mx-16 -mt-16 h-32 w-32 rounded-full bg-red-600"></div>
+            <div class="relative z-10">
+                <div class="mb-6 min-h-20 text-3xl font-bold text-black">Arm Rover</div>
+                <div class="text-lg text-black">Start: <span class="font-bold text-yellow-500">04.11.2022</span></div>
             </div>
+            </a>
         </div>
+    </section>
 
-        <!--P3-->
-        <div
-            class="flex flex-wrap justify-center items-center md:justify-center w-auto h-auto border border-black rounded-3xl flex-col">
-            <img src="./resources/ia.jpg" class="project-image rounded-3xl object-contain h-40 w-96" alt="armrover" />
-            <h1 class="font-semibold text-2xl mt-8">Arm Rover</h1>
-            <div class="flex flex-row gap-4">
-                <a href="https://github.com/jorgeeluisvg/armRover">
-                    <button type="button"
-                        class="mt-8 text-black bg-white border border-black hover:bg-gray-800 focus:ring-4 focus:ring-lime-400 font-medium rounded-full px-5 py-2.5 md:text-sm hover:text-white mb-8">
-                        Github
-                    </button></a>
-            </div>
-        </div>
-    </div>
-
+    <!--Footer-->
     <footer class="mt-20 text-center p-5 text-gray-500 font-bold uppercase">
         © 2024 JorgeGamboa - Todos los derechos reservados
     </footer>
